@@ -17,7 +17,7 @@ public class QuickSort {
             }
         }
         swap(arr, k + 1, j);
-        System.out.println("Pivot: " + pivot + ", k: " + (k + 1) + ", i: " + i + ", j: " + j);
+        System.out.println("Pivot: " + pivot + ", k: " + k + ", i: " + i + ", j: " + j);
         return k + 1;
     }
 
@@ -25,7 +25,7 @@ public class QuickSort {
         if (i < j) {
             int pi = partition(arr, i, j);
 
-            quickSort(arr, i, pi - 1);       
+            quickSort(arr, i, pi - 1);
             quickSort(arr, pi + 1, j);
         }
     }
